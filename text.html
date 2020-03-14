@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>My First Project</title>
+    <link rel="stylesheet" href="style.css">
+    <h1> Demo </h1>
+    <p> Here, I started </p>
+	<script type="text/javascript">
+	<!--
+		var getVal = (function() {
+		var obj = ( function( thisId ) {
+		var myObj = document.getElementById( thisId ) || document.all[ thisId ];
+			return myObj;
+			} );
+		var newtext2 = obj( "reply" ).value;
+			obj( "layer1" ).innerHTML = (( newtext2 ) ? newtext2 : "null" );
+
+		});
+	-->
+	</script>
+	</head>
+	<body>
+		<form id="form1" method="post" action="#" onsubmit="return false;">
+			<div>
+			<textarea name="reply" id="reply" naame="reply" rows="3"
+cols="30"></textarea> <input type="button" value="Add Text" onclick="getVal();" />
+<div id="layer1"></div>
+			</div>
+		</form>
+	</body>
+</html>
