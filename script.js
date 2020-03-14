@@ -1,5 +1,6 @@
 /* var button = document.getElementById("btn")
 button.addEventListener('onclick', getVal)
+*/
 var getVal = (function() {
     var obj = ( function( thisId ) {
     var myObj = document.getElementById( thisId ) || document.all[ thisId ];
@@ -7,10 +8,18 @@ var getVal = (function() {
       } );
     var newtext2 = obj( "reply" ).value;
       obj( "layer1" ).innerHTML = (( newtext2 ) ? newtext2 : "null" );
+      var button = document.getElementById("btn")
 
     });
-*/
-    const input = document.querySelector('input');
+
+  /*
+  var button = document.getElementById("btn")
+  button.addEventListener('onclick', myForm)
+  function myFunction() {
+    document.getElementById("myForm").submit();
+  }
+
+  const input = document.querySelector('input');
     const log = document.getElementById('log');
 
     input.addEventListener('change', updateValue);
@@ -25,3 +34,4 @@ var getVal = (function() {
       const result = document.querySelector('.result');
       result.textContent = `You like ${event.target.value}`;
     });
+*/
