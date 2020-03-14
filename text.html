@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 
-
 <html>
 	<head>
 		<title>My First Project</title>
     <link rel="stylesheet" href="style.css">
     <h1> Demo </h1>
     <p> Here, I started </p>
-	<script type="text/javascript">
-	<!--
-		var getVal = (function() {
-		var obj = ( function( thisId ) {
-		var myObj = document.getElementById( thisId ) || document.all[ thisId ];
-			return myObj;
-			} );
-		var newtext2 = obj( "reply" ).value;
-			obj( "layer1" ).innerHTML = (( newtext2 ) ? newtext2 : "null" );
-
-		});
-	-->
-	</script>
 	</head>
+  <script src="script.js" >
+
+  </script>
+  <input placeholder="Enter some text" name="name"/>
+<p id="log"></p>
 	<body>
-		<form id="form1" method="post" action="#" onsubmit="return false;">
-			<div>
-			<textarea name="reply" id="reply" naame="reply" rows="3"
-cols="30"></textarea> <input type="button" value="Add Text" onclick="getVal();" />
-<div id="layer1"></div>
-			</div>
-		</form>
+    <!--
+    <form id="form1" method="post" action="#" onsubmit="return false;">
+      <div>
+      <input name="reply" id="btn" naame="reply" rows="3"
+    cols="30"></input> <input type="button" value="Add Tasks" onclick="getVal();" />
+    <div id="layer1"></div>
+      </div>
+      <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <p id="demo"></p>
+
+    </form>
+    -->
+    <label>Choose an ice cream flavor:
+  <select class="ice-cream" name="ice-cream">
+    <option value="">Select One …</option>
+    <option value="chocolate">Chocolate</option>
+    <option value="sardine">Sardine</option>
+    <option value="vanilla">Vanilla</option>
+  </select>
+</label>
+
+<div class="result"></div>
+
 	</body>
 </html>
